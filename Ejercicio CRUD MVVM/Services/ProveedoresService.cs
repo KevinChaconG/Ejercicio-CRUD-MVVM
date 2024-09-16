@@ -15,6 +15,34 @@ namespace Ejercicio_CRUD_MVVM.Services
         public ProveedoresService()
         {
 
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Proveedores.db3");
+
+            dbConnection = new SQLiteConnection(dbPath);
+
+            dbConnection.CreateTable<Proveedores>();
+
         }
+
+        public List<Proveedores> GetAll()
+        {
+            var res = dbConnection.Table<Proveedores>().ToList();
+            return res;
+        }
+
+        public int Insert(Proveedores proveedores)
+        {
+            return dbConnection.Insert(proveedores);
+        }
+
+        public int Update(Proveedores proveedores)
+        {
+            return dbConnection.Update(proveedores);
+        }
+
+        public int Delete(Proveedores proveedores)
+        {
+            return dbConnection.Delete(proveedores);
+        }
+
     }
 }
