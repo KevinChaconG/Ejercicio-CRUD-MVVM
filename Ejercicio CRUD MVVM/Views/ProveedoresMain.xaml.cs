@@ -5,17 +5,17 @@ namespace Ejercicio_CRUD_MVVM.Views;
 public partial class ProveedoresMain : ContentPage
 {
 
-	private ProveedoresMainViewModel viewModel;
+	private ProveedoresMainViewModel ViewModel;
 	public ProveedoresMain()
 	{
 		InitializeComponent();
-		viewModel = new ProveedoresMainViewModel();
-		this.BindingContext = viewModel;	
+		ViewModel = new ProveedoresMainViewModel();
+		this.BindingContext = ViewModel;	
 	}
 
     protected override void OnAppearing()
     {
         base.OnAppearing();
-		viewModel.GetAll();
+		ViewModel.GetAll();
     }
 }

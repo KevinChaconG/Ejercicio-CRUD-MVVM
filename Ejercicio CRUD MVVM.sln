@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio CRUD MVVM", "Ejercicio CRUD MVVM\Ejercicio CRUD MVVM.csproj", "{B80C6E5E-9DDC-4B02-8945-F54A484D8B6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicio CRUD MVVM", "Ejercicio CRUD MVVM\Ejercicio CRUD MVVM.csproj", "{B80C6E5E-9DDC-4B02-8945-F54A484D8B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

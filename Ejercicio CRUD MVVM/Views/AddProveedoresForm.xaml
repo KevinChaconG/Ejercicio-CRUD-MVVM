@@ -4,7 +4,7 @@
              x:Class="Ejercicio_CRUD_MVVM.Views.AddProveedoresForm"
              xmlns:viewModel="clr-namespace:Ejercicio_CRUD_MVVM.ViewModels"
              x:DataType="viewModel:AddProveedoresFormViewModel"
-             Title="AddProveedoresForm">
+             Title="Proveedores">
 
 
     <VerticalStackLayout Padding="30,0,30,0" Spacing="5" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
@@ -17,7 +17,7 @@
         <Label Text="Teléfono: " />
         <Entry Text="{Binding Telefono}" Keyboard="Numeric" Placeholder="Ingrese el número de teléfono del proveedor" />
 
-        <Label Text="Nombre: " />
+        <Label Text="Correo Eléctronico: " />
         <Entry Text="{Binding Email}" Keyboard="Email" Placeholder="Ingrese el correo eléctronico del proveedor" />
 
         <Button Text="Guardar" Command="{Binding AddUpdateCommand}" />
